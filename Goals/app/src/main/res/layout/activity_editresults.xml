@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgoals"
+    tools:context="com.example.manthankhorwal.goals.editresults">
+
+    <TextView
+        android:id="@+id/donequesshowtext"
+        android:layout_width="149dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@android:color/background_dark"
+        android:textSize="80dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.276" />
+
+    <ImageView
+        android:id="@+id/imageViewplus"
+        android:layout_width="70dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="44dp"
+        android:onClick="clickpositive"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/donequesshowtext"
+        app:srcCompat="@drawable/plus" />
+
+    <ImageView
+        android:id="@+id/imageViewminus"
+        android:layout_width="58dp"
+        android:layout_height="69dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="47dp"
+        android:onClick="clicknegative"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.738"
+        app:layout_constraintStart_toEndOf="@+id/imageViewplus"
+        app:layout_constraintTop_toBottomOf="@+id/donequesshowtext"
+        app:srcCompat="@drawable/minus" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="360dp"
+        android:onClick="editprogress"
+        android:text="Update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/topicshown"
+        android:layout_width="108dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/black"
+        android:textSize="24dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/stilldoto"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="36dp"
+        android:textColor="@android:color/black"
+        android:textSize="36sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.0" />
+</android.support.constraint.ConstraintLayout>
