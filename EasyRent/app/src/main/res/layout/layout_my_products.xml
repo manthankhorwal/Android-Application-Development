@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:elevation="15dp"
+    app:cardCornerRadius="30dp"
+    app:cardBackgroundColor="@color/WhiteSmoke"
+    android:layout_marginTop="15sp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+  <RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/myproducts_product_image"
+        android:src="@drawable/select_product_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+    </ImageView>
+    <TextView
+        android:id="@+id/bookedby_details"
+        android:layout_below="@id/myproducts_product_image"
+        android:layout_marginLeft="15dp"
+        android:visibility="gone"
+        android:text="Booked By "
+        android:lines="2"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:textSize="17dp"
+        android:id="@+id/myproducts_product_name"
+        android:layout_toRightOf="@+id/myproducts_product_image"
+        android:text="Product Name"
+        android:layout_width="wrap_content"
+        android:layout_toLeftOf="@id/myproducts_state"
+        android:layout_height="wrap_content">
+    </TextView>
+    <TextView
+
+        android:id="@+id/myproducts_product_price"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="10dp"
+        android:textSize="17dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/myproducts_product_name"
+        android:text="Product Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+    <TextView
+        android:id="@+id/myproducts_state"
+        android:text="State"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20sp"
+        android:layout_toLeftOf="@id/state_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+<ImageView
+    android:id="@+id/state_image"
+    android:src="@drawable/reddot"
+    android:layout_width="10dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginRight="14dp"
+    android:layout_alignParentRight="true"
+    android:layout_height="10dp"></ImageView>
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

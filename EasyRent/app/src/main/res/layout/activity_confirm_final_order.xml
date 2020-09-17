@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmFinalOrder">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"><Button
+        android:id="@+id/home_button_confirm"
+        android:textColor="@color/White"
+        android:text="Home"
+        android:background="@drawable/input_design"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Button>
+    </androidx.appcompat.widget.Toolbar>
+
+<TextView
+    android:layout_below="@id/toolbar"
+    android:id="@+id/shippment_text"
+    android:textColor="@color/Black"
+    android:layout_marginTop="40dp"
+   android:gravity="center"
+    android:textSize="30dp"
+    android:text="Enter Shippment Details"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</TextView>
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="30dp"
+        android:layout_margin="10dp"
+        android:layout_below="@id/shippment_text"
+        android:id="@+id/card"
+        app:cardBackgroundColor="@color/CadetBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/shippment_enter_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Name"
+                android:background="@drawable/input_design"
+                android:layout_margin="15dp"
+                android:textSize="30dp"
+                ></EditText>
+            <EditText
+                android:id="@+id/shippment_enter_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Mobile Number"
+                android:layout_below="@id/shippment_enter_name"
+                android:background="@drawable/input_design"
+                android:layout_margin="15dp"
+                android:textSize="30dp"
+                ></EditText>
+            <EditText
+                android:id="@+id/shippment_enter_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter City"
+                android:layout_below="@id/shippment_enter_mobile"
+                android:background="@drawable/input_design"
+                android:layout_margin="15dp"
+                android:textSize="30dp"
+                ></EditText>
+            <EditText
+                android:id="@+id/shippment_enter_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Address"
+                android:layout_below="@id/shippment_enter_city"
+                android:background="@drawable/input_design"
+                android:layout_margin="15dp"
+                android:textSize="30dp"
+                ></EditText>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/next_button"
+        android:text="Confirm Order"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/card"
+        android:layout_marginTop="100dp"
+        android:textSize="20dp"
+        android:padding="20dp"
+        android:background="@drawable/buttons"
+        android:layout_height="wrap_content">
+
+    </Button>
+</RelativeLayout>

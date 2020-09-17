@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/see_new_order"
+    android:title="See New Orders"
+    >
+</item>
+    <item
+        android:id="@+id/see_logout"
+        android:title="Logout"></item>
+</menu>

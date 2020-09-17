@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/colorPrimaryDark"
+    android:layout_width="match_parent"
+    android:layout_margin="15dp"
+    app:cardCornerRadius="12dp"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:id="@+id/r1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <TextView
+        android:text="Name"
+        android:textSize="15dp"
+        android:id="@+id/new_order_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+    <TextView
+        android:text="Phone number"
+        android:id="@+id/new_order_phone"
+        android:layout_alignParentRight="true"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <TextView
+        android:text="Total amount"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/new_order_amount"
+  android:layout_below="@id/new_order_name"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+    <TextView
+        android:text="Shipping Address"
+        android:id="@+id/new_order_address"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/new_order_amount"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+    <TextView
+        android:text="Order at"
+        android:layout_marginTop="10dp"
+        android:id="@+id/new_order_orderat"
+        android:layout_below="@id/new_order_address"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+        <Button
+            android:id="@+id/show_product_btn"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:text="Show Product Details"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:background="@drawable/input_design"
+            android:layout_below="@id/new_order_orderat"
+            android:layout_centerHorizontal="true">
+        </Button>
+
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>
